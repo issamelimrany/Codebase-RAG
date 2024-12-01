@@ -27,7 +27,7 @@ pinecone_index = pc.Index("codebase-rag")
 # Initialize OpenAI client
 client = OpenAI(
     base_url="https://api.groq.com/openai/v1",
-    api_key=os.gentenv("GROQ_API_KEY")
+    api_key=os.getenv("GROQ_API_KEY")
 )
 
 
